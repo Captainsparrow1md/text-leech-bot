@@ -95,8 +95,7 @@ async def account_login(bot: Client, m: Message):
     await input1.delete(True)
 
 
-    await editable.edit(Ashu.Q1_TXT)
-    await editable.edit(Ashu.Q1_TEXT)
+    
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
